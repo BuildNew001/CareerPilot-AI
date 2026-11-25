@@ -1,0 +1,21 @@
+Jordan Lee
+New York, NY | jordan.lee@email.com
+Target Role: Backend / Full-Stack Python Engineer
+
+SUMMARY
+Backend & Full-Stack Software Engineer with 4 years of experience designing high-throughput Python APIs, PostgreSQL data models, and modern React/TypeScript web applications. Interested in developer platforms, AI-powered products, and distributed systems.
+
+EXPERIENCE
+Software Engineer | FlowLedger Tech (2022 - Present)
+- Built async REST APIs with FastAPI, PostgreSQL, and Redis handling 15M+ daily requests with 99.95% uptime.
+- Developed customer-facing analytics and workflow management UIs in TypeScript and React.
+- Containerized microservices with Docker and automated CI/CD testing with Pytest and GitHub Actions.
+
+Junior Software Developer | BrightWeb Studio (2020 - 2022)
+- Implemented backend endpoints in Python and Django, wrote SQL migrations, and integrated third-party OAuth2 APIs.
+
+SKILLS
+Python, FastAPI, Django, TypeScript, React, PostgreSQL, SQL, Redis, Docker, REST APIs, Git, Pytest, CI/CD, Linux, AWS
+
+EDUCATION
+B.S. in Computer Science - NYU

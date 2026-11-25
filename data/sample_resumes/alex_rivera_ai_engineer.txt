@@ -1,0 +1,26 @@
+Alex Rivera
+San Francisco, CA | alex.rivera@email.com | github.com/alexrivera-ai
+Target Role: Senior AI / LLM Engineer
+
+SUMMARY
+Applied Machine Learning & LLM Engineer with 5 years of experience building production semantic search systems, retrieval-augmented generation (RAG) pipelines, and tool-calling AI agents in Python. Passionate about reliable AI workflows, structured outputs, and scalable developer tools.
+
+EXPERIENCE
+Senior Machine Learning Engineer | ClaritySearch Inc. (2023 - Present)
+- Architected a hybrid semantic + lexical enterprise search engine using Sentence Transformers, Scikit-learn cosine similarity, and Elasticsearch, improving top-5 retrieval precision by 28%.
+- Built an agentic customer research copilot with OpenAI API function calling, Pydantic structured outputs, and FastAPI streaming endpoints.
+- Implemented automated RAG faithfulness and latency evaluation pipelines using Pytest and Pandas.
+
+Machine Learning Engineer | DataPulse Systems (2021 - 2023)
+- Developed NLP text classification, entity extraction, and embedding clustering pipelines in Python and PyTorch.
+- Built internal interactive evaluation dashboards in Streamlit for data scientists and product managers.
+- Containerized ML microservices with Docker and deployed on AWS with CI/CD pipelines.
+
+SKILLS
+Languages & Core: Python, SQL, TypeScript (basic)
+AI / ML / NLP: OpenAI API, Prompt Engineering, Function Calling, RAG, Sentence Transformers, Embeddings, Scikit-learn, PyTorch, Hugging Face, Information Retrieval, LLM Evaluation
+Backend & Data: FastAPI, Streamlit, Pandas, NumPy, PostgreSQL, Vector Databases, Docker, Git, Pytest, AWS
+
+EDUCATION
+M.S. in Computer Science (Machine Learning Track) - University of California, Davis
+B.S. in Computer Engineering

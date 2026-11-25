@@ -1,0 +1,22 @@
+Priya Sharma
+Remote / Austin, TX | priya.sharma@email.com
+Target Role: Data Scientist / Analytics Engineer
+
+SUMMARY
+Data Scientist with 3.5 years of experience turning messy product and customer data into predictive models, A/B experimentation frameworks, and interactive Streamlit decision tools. Strong foundation in Python, SQL, Scikit-learn, and customer intelligence.
+
+EXPERIENCE
+Data Scientist | GrowthMetric SaaS (2022 - Present)
+- Built churn prediction and customer lifetime value models with Scikit-learn and XGBoost, reducing quarterly SaaS churn by 11%.
+- Designed and analyzed 40+ product A/B tests using statistical hypothesis testing and SQL cohorts in Snowflake.
+- Created self-serve Streamlit analytics apps for executive KPI tracking and customer segmentation.
+
+Data Analyst | FinCore Group (2021 - 2022)
+- Automated daily ETL reporting pipelines in Python, Pandas, and dbt.
+- Built retention dashboards and cohort attribution reports in Looker and SQL.
+
+SKILLS
+Python, SQL, Pandas, NumPy, Scikit-learn, XGBoost, Statistics, A/B Testing, Causal Inference, Streamlit, dbt, Snowflake, Git, Data Visualization
+
+EDUCATION
+B.S. in Statistics & Data Science - UT Austin
