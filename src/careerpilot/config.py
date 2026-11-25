@@ -8,6 +8,9 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
+# Suppress noisy HuggingFace Hub symlink warnings on Windows without Developer Mode
+os.environ.setdefault("HF_HUB_DISABLE_SYMLINKS_WARNING", "1")
+
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DATA_DIR = PROJECT_ROOT / "data"
 JOBS_CSV_PATH = DATA_DIR / "jobs.csv"

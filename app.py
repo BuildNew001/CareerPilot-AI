@@ -43,11 +43,15 @@ def get_jobs_catalog() -> list[JobPosting]:
     return load_jobs()
 
 
-@st.cache_resource(show_spinner="Indexing job postings with semantic embeddings...")
-def get_semantic_index(embedding_model: str) -> SemanticJobIndex:
+@st.cache_resource(show_spinner=False)
+def get_semantic_index(embedding_model: str, prefer_transformer: bool = True) -> SemanticJobIndex:
     """Build and cache the semantic embedding index across reruns."""
     jobs = get_jobs_catalog()
-    return SemanticJobIndex(jobs=jobs, model_name=embedding_model, prefer_transformer=True)
+    return SemanticJobIndex(
+        jobs=jobs,
+        model_name=embedding_model,
+        prefer_transformer=prefer_transformer,
+    )
 
 
 def _init_session_state() -> None:
@@ -79,7 +83,6 @@ def main() -> None:
 
     settings = Settings.from_env(api_key_override=st.session_state.get("api_key_input"))
     jobs = get_jobs_catalog()
-    index = get_semantic_index(settings.embedding_model)
     sample_resumes = load_sample_resumes()
 
     # Sidebar controls & persistent memory summary
@@ -93,6 +96,29 @@ def main() -> None:
         )
         st.session_state.api_key_input = api_key_input
         settings = Settings.from_env(api_key_override=api_key_input)
+
+        embedding_choice = st.radio(
+            "Embedding Engine",
+            options=["Sentence Transformers (MiniLM)", "Fast TF-IDF (Instant)"],
+            index=0,
+            help="MiniLM provides dense semantic embeddings; TF-IDF starts instantaneously offline.",
+        )
+        prefer_transformer = embedding_choice.startswith("Sentence")
+
+    # Render loading indicator cleanly inside the page if model is initializing for the first time
+    status_slot = st.empty()
+    with (
+        status_slot,
+        st.spinner(
+            "Loading semantic job index (first-time MiniLM download is ~90 MB)..."
+            if prefer_transformer
+            else "Building TF-IDF job index..."
+        ),
+    ):
+        index = get_semantic_index(settings.embedding_model, prefer_transformer=prefer_transformer)
+    status_slot.empty()
+
+    with st.sidebar:
 
         st.divider()
         st.subheader("Quick Sample Resumes")

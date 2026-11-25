@@ -1,5 +1,7 @@
 # CareerPilot AI — Intelligent Job Search & Career Agent
 
+[![CI](https://github.com/BuildNew001/CareerPilot-AI/actions/workflows/ci.yml/badge.svg)](https://github.com/BuildNew001/CareerPilot-AI/actions/workflows/ci.yml)
+
 An AI-powered career assistant that analyzes a candidate's resume into structured skills and experience, searches a curated dataset of 80 technical roles using semantic embeddings, ranks opportunities with matched/missing skill breakdowns, and provides a tool-calling AI Career Copilot with persistent preference memory.
 
 ---
